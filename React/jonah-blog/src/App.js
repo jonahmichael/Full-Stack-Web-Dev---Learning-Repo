@@ -1,5 +1,6 @@
 import './App.css';
-
+import Navbar from './Navbar';
+import Home from './Home';
 function App() {
    const title = "Jonah's Blog";
    const likes= 50;
@@ -10,7 +11,8 @@ function App() {
         <h1>Welcome to {title}</h1>
         <p>This blog has {likes} likes</p>
         {/* <p>{person.name} is {person.age} years old</p> */}
-        <a href ={`https://www.google.com/search?q=${person.name}+age`}>Search {person.name}'s age</a>
+        <Home />
+        <Navbar />
       </div>
     </div>
   );
